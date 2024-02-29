@@ -1,0 +1,21 @@
+                        
+    <tr class="query-error">
+        <td style="display:table-cell">
+            <div>Error Number: 1146</div><div>Table 'appineers_v4.mod_country' doesn't exist</div><div>SELECT `ms`.`iStateId` AS `iStateId`,`ms`.`iStateId` AS `ms_state_id`,`ms`.`vState` AS `ms_state`,`mc`.`vCountry` AS `mc_country`,`ms`.`vStateCode` AS `ms_state_code`,`ms`.`vCountryCode` AS `ms_country_code`,`ms`.`eStatus` AS `ms_status`
+FROM `mod_state` AS `ms`
+LEFT JOIN `mod_country` AS `mc` ON `mc`.`iCountryId` = `ms`.`iCountryId`
+WHERE `ms`.`iSysRecDeleted` <> 1
+ORDER BY `ms_state` ASC
+ LIMIT 5</div><div>Filename: database/DB_driver.php</div><div>Line Number: 210</div>
+        </td>
+        <td></td>
+    </tr>                        
+    <tr class="query-error">
+        <td style="display:table-cell">
+            <div>Error Number: 1146</div><div>Table 'appineers_v4.mod_country' doesn't exist</div><div>SELECT COUNT(*) AS `numrows`
+FROM `mod_state` AS `ms`
+LEFT JOIN `mod_country` AS `mc` ON `mc`.`iCountryId` = `ms`.`iCountryId`
+WHERE `ms`.`iSysRecDeleted` <> 1</div><div>Filename: database/DB_driver.php</div><div>Line Number: 210</div>
+        </td>
+        <td></td>
+    </tr>
